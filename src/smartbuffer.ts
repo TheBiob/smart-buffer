@@ -1263,11 +1263,7 @@ class SmartBuffer {
     }
 
     // Adjust tracked smart buffer length
-    if (offset + dataLength > this.length) {
-      this.length = offset + dataLength;
-    } else {
-      this.length += dataLength;
-    }
+    this.length += dataLength;
   }
 
   /**
